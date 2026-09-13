@@ -1,0 +1,53 @@
+name: Запустить проверку сайта
+
+# workflow_dispatch — это то, что даёт кнопку "Run workflow" прямо на
+# странице GitHub, с полем для ввода адреса сайта. Никакого отдельного
+# сервера или хостинга не нужно — код выполняется на сервере самого GitHub.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Адрес сайта для проверки (полностью, с https://)'
+        required: true
+        default: 'https://the-internet.herokuapp.com/'
+
+# Права, нужные для публикации отчёта на GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  test-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачать код репозитория
+        uses: actions/checkout@v4
+
+      - name: Установить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Установить зависимости
+        run: pip install -r requirements.txt
+
+      - name: Установить браузер для Playwright
+        run: playwright install --with-deps chromium
+
+      - name: Запустить тестировщик
+        env:
+          TEST_URL: ${{ github.event.inputs.url }}
+        run: python website_tester.py
+
+      - name: Добавить отметку времени запуска в отчёт
+        run: |
+          echo "<p style='color:#8b93a1;font-family:monospace;font-size:12px;'>Запущено вручную через GitHub Actions · $(date -u '+%Y-%m-%d %H:%M UTC')</p>" >> reports/report.html
+
+      - name: Опубликовать отчёт на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
+          destination_dir: latest-report
+          keep_files: false
