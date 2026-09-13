@@ -1,0 +1,228 @@
+Отчёт о тестировании — 2026-09-13 15:58:58
+Всего проверок: 56 | Успешно: 53 | Ошибок: 3
+======================================================================
+
+[2026-09-13 15:58:59] [OK] [Smoke-тест] Код ответа сервера
+    URL: https://the-internet.herokuapp.com/
+    Детали: Получен код: 200
+
+[2026-09-13 15:58:59] [OK] [Smoke-тест] Скорость загрузки
+    URL: https://the-internet.herokuapp.com/
+    Детали: Загрузилась за 0.33с (порог: 3.0с)
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://github.com/tourdedave/the-internet
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/abtest
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/add_remove_elements/
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [FAIL] [Битые ссылки] https://the-internet.herokuapp.com/basic_auth
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 401
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/broken_images
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/challenging_dom
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/checkboxes
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/context_menu
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [FAIL] [Битые ссылки] https://the-internet.herokuapp.com/digest_auth
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 401
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/disappearing_elements
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/drag_and_drop
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/dropdown
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/dynamic_content
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/dynamic_controls
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/dynamic_loading
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/entry_ad
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/exit_intent
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/download
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/upload
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/floating_menu
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/forgot_password
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/login
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/frames
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/geolocation
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/horizontal_slider
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/hovers
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/infinite_scroll
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/inputs
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:00] [OK] [Битые ссылки] https://the-internet.herokuapp.com/jqueryui/menu
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/javascript_alerts
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/javascript_error
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/key_presses
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/large
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/windows
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/nested_frames
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/notification_message
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/redirector
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [FAIL] [Битые ссылки] https://the-internet.herokuapp.com/download_secure
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 401
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/shadowdom
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/shifting_content
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/slow
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/tables
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/status_codes
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/typos
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:01] [OK] [Битые ссылки] https://the-internet.herokuapp.com/tinymce
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:02] [OK] [Битые ссылки] http://elementalselenium.com/
+    URL: https://the-internet.herokuapp.com/
+    Детали: Код ответа: 200
+
+[2026-09-13 15:59:02] [OK] [Битые картинки] Все картинки загрузились
+    URL: https://the-internet.herokuapp.com/
+    Детали: Проверено картинок: 1
+
+[2026-09-13 15:59:02] [OK] [Формы] Формы на странице
+    URL: https://the-internet.herokuapp.com/
+    Детали: Форм на странице не найдено — тест форм пропущен
+
+[2026-09-13 15:59:02] [OK] [UI/UX] Горизонтальный overflow (mobile, 375px)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Overflow не обнаружен
+
+[2026-09-13 15:59:02] [OK] [UI/UX] Скриншот (mobile, 375×812)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Сохранено: the-internet_herokuapp_com_mobile.png
+
+[2026-09-13 15:59:02] [OK] [UI/UX] Горизонтальный overflow (tablet, 768px)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Overflow не обнаружен
+
+[2026-09-13 15:59:02] [OK] [UI/UX] Скриншот (tablet, 768×1024)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Сохранено: the-internet_herokuapp_com_tablet.png
+
+[2026-09-13 15:59:02] [OK] [UI/UX] Горизонтальный overflow (desktop, 1920px)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Overflow не обнаружен
+
+[2026-09-13 15:59:03] [OK] [UI/UX] Скриншот (desktop, 1920×1080)
+    URL: https://the-internet.herokuapp.com/
+    Детали: Сохранено: the-internet_herokuapp_com_desktop.png
+

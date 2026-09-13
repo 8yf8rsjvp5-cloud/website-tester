@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Отчёт о тестировании</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; background:#12161b; color:#eae6df; margin:0; padding:24px; }
+  .container { max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 24px; margin-bottom:4px; }
+  .meta { color:#8b93a1; font-size:13px; margin-bottom:20px; }
+  .summary { display:flex; gap:12px; margin-bottom:28px; }
+  .summary-card { background:#1b2129; border:1px solid #2b3340; border-radius:10px; padding:14px 18px; flex:1; }
+  .summary-card .num { font-size:26px; font-weight:700; }
+  .summary-card .label { font-size:12px; color:#8b93a1; text-transform:uppercase; letter-spacing:.05em; }
+  .summary-card.pass .num { color:#5fb8a8; }
+  .summary-card.fail .num { color:#c65c4a; }
+  .url-heading { font-size:16px; margin-top:28px; border-bottom:1px solid #2b3340; padding-bottom:8px; display:flex; justify-content:space-between; align-items:center; }
+  .url-score { font-size:13px; color:#8b93a1; font-weight:normal; }
+  table.results-table { width:100%; border-collapse:collapse; margin-top:10px; font-size:13px; }
+  .results-table td { padding:8px 10px; border-bottom:1px solid #232b34; vertical-align:top; }
+  .row-fail { background:rgba(198,92,74,0.08); }
+  .row-pass { background:transparent; }
+  .cell-icon { width:28px; text-align:center; }
+  .cell-category { width:120px; color:#c98a4b; white-space:nowrap; }
+  .cell-name { width:220px; font-weight:600; }
+  .cell-details { color:#8b93a1; word-break:break-word; }
+  .cell-time { width:130px; color:#8b93a1; font-family:monospace; font-size:11px; white-space:nowrap; }
+  .thumb { max-width:220px; border-radius:6px; border:1px solid #2b3340; margin-top:6px; display:block; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Отчёт о тестировании сайтов</h1>
+  <div class="meta">Сформирован: 2026-09-13 15:58:58</div>
+  <div class="summary">
+    <div class="summary-card"><div class="num">56</div><div class="label">Всего проверок</div></div>
+    <div class="summary-card pass"><div class="num">53</div><div class="label">Успешно</div></div>
+    <div class="summary-card fail"><div class="num">3</div><div class="label">Ошибок</div></div>
+    <div class="summary-card"><div class="num">95%</div><div class="label">Общий балл</div></div>
+  </div>
+  <h2 class="url-heading">https://the-internet.herokuapp.com/ <span class="url-score">53/56</span></h2>
+<table class="results-table">
+
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Smoke-тест</td>
+                    <td class="cell-name">Код ответа сервера</td>
+                    <td class="cell-details">Получен код: 200</td>
+                    <td class="cell-time">2026-09-13 15:58:59</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Smoke-тест</td>
+                    <td class="cell-name">Скорость загрузки</td>
+                    <td class="cell-details">Загрузилась за 0.33с (порог: 3.0с)</td>
+                    <td class="cell-time">2026-09-13 15:58:59</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://github.com/tourdedave/the-internet</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/abtest</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/add_remove_elements/</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-fail">
+                    <td class="cell-icon">❌</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/basic_auth</td>
+                    <td class="cell-details">Код ответа: 401</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/broken_images</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/challenging_dom</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/checkboxes</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/context_menu</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-fail">
+                    <td class="cell-icon">❌</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/digest_auth</td>
+                    <td class="cell-details">Код ответа: 401</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/disappearing_elements</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/drag_and_drop</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/dropdown</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/dynamic_content</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/dynamic_controls</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/dynamic_loading</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/entry_ad</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/exit_intent</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/download</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/upload</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/floating_menu</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/forgot_password</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/login</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/frames</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/geolocation</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/horizontal_slider</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/hovers</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/infinite_scroll</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/inputs</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/jqueryui/menu</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:00</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/javascript_alerts</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/javascript_error</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/key_presses</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/large</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/windows</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/nested_frames</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/notification_message</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/redirector</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-fail">
+                    <td class="cell-icon">❌</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/download_secure</td>
+                    <td class="cell-details">Код ответа: 401</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/shadowdom</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/shifting_content</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/slow</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/tables</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/status_codes</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/typos</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">https://the-internet.herokuapp.com/tinymce</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:01</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые ссылки</td>
+                    <td class="cell-name">http://elementalselenium.com/</td>
+                    <td class="cell-details">Код ответа: 200</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Битые картинки</td>
+                    <td class="cell-name">Все картинки загрузились</td>
+                    <td class="cell-details">Проверено картинок: 1</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">Формы</td>
+                    <td class="cell-name">Формы на странице</td>
+                    <td class="cell-details">Форм на странице не найдено — тест форм пропущен</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Горизонтальный overflow (mobile, 375px)</td>
+                    <td class="cell-details">Overflow не обнаружен</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Скриншот (mobile, 375×812)</td>
+                    <td class="cell-details">Сохранено: the-internet_herokuapp_com_mobile.png<br><a href="screenshots/the-internet_herokuapp_com_mobile.png" target="_blank"><img class="thumb" src="screenshots/the-internet_herokuapp_com_mobile.png" alt="скриншот"></a></td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Горизонтальный overflow (tablet, 768px)</td>
+                    <td class="cell-details">Overflow не обнаружен</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Скриншот (tablet, 768×1024)</td>
+                    <td class="cell-details">Сохранено: the-internet_herokuapp_com_tablet.png<br><a href="screenshots/the-internet_herokuapp_com_tablet.png" target="_blank"><img class="thumb" src="screenshots/the-internet_herokuapp_com_tablet.png" alt="скриншот"></a></td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Горизонтальный overflow (desktop, 1920px)</td>
+                    <td class="cell-details">Overflow не обнаружен</td>
+                    <td class="cell-time">2026-09-13 15:59:02</td>
+                </tr>
+                
+                <tr class="row-pass">
+                    <td class="cell-icon">✅</td>
+                    <td class="cell-category">UI/UX</td>
+                    <td class="cell-name">Скриншот (desktop, 1920×1080)</td>
+                    <td class="cell-details">Сохранено: the-internet_herokuapp_com_desktop.png<br><a href="screenshots/the-internet_herokuapp_com_desktop.png" target="_blank"><img class="thumb" src="screenshots/the-internet_herokuapp_com_desktop.png" alt="скриншот"></a></td>
+                    <td class="cell-time">2026-09-13 15:59:03</td>
+                </tr>
+                </table>
+
+</div>
+</body>
+</html>
+<p style='color:#8b93a1;font-family:monospace;font-size:12px;'>Запущено вручную через GitHub Actions · 2026-09-13 15:59 UTC</p>
